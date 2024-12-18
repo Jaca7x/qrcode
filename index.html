@@ -1,26 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+}
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | QR code component</title>
+h1 {
+    position: absolute;
+    color: hsl(218, 44%, 22%);
+    font-size: 20px;
+    font-weight: 700;
+    bottom: 40%;
+}
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-<div class="quadrado">
-  <div class="quda">
-  </div>
-  <h1>Never gonna give you up</h1>
+p {
+    font-size: 15px;
+    font-weight: 300;
+    color: hsl(216, 15%, 48%);
+    bottom: 25%;
+    position: absolute;
+}
 
-  <p>Se o palmeiras não tem mundial é culpa do Nathan e do Miguel</p>
 
-</body>
-</html>
+.quadrado {
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 200px;
+    right: -350px;
+    padding-bottom: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+.quda {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/image-qr-code.png);
+    background-size: 100%;
+    border-radius: 5px; 
+    position: absolute;
+    right: 25px;
+    bottom: 55%;
+}
+@media only screen{
+    body{
+      overflow: hidden;
+    }
+  }
